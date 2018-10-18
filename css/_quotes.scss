@@ -1,0 +1,93 @@
+
+
+
+
+
+section.quotes-fluid{
+
+    background-color:#F6F6F6;
+    justify-content: center;
+
+    div.napis{
+
+        h2{
+
+            font-family:'Raleway', sans-serif;
+            font-size: 3rem;
+            font-weight: 300;
+
+        }
+
+    }
+
+    div.quotes{
+
+        height: 17rem;
+        display: flex;
+        // background-color: rgb(212, 212, 212);
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        border: 2rem;
+        align-items: flex-start;
+     
+
+        div.kolo1{
+
+            height:4rem;
+            width:4rem;
+            background-color:rgb(187, 187, 187);
+            border-radius: 50%;
+            
+            
+
+        }
+
+        div.kolo2{
+
+            height:4rem;
+            width:4rem;
+            background-color:rgb(145, 142, 142);
+            border-radius: 50%;
+            
+            
+
+        }
+
+        div.kolo3{
+
+            height:4rem;
+            width:4rem;
+            background-color:rgb(73, 73, 73);
+            border-radius: 50%;
+            
+            
+
+        }
+
+        div.kolo4{
+
+            height:4rem;
+            width:4rem;
+            background-color:rgb(43, 43, 43);
+            border-radius: 50%;
+            
+            
+
+        }
+        
+        >article{
+            
+            width:45rem;
+            padding: none;
+            font-family:'Raleway', sans-serif;
+
+
+        }
+
+    }
+}
+
+
+
+

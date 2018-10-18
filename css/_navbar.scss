@@ -1,5 +1,6 @@
 section.navbar-fluid {
 
+    z-index:999;
     top:0;
     position: fixed;
     background-color: white;
@@ -7,6 +8,7 @@ section.navbar-fluid {
 
     div.navbar {
 
+        
         height: 6rem;
         display: flex;
         justify-content: space-between;

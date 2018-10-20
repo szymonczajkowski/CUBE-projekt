@@ -1,3 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 html {
   font-size: 10px;
 }
@@ -45,6 +52,52 @@ section.navbar-fluid div.navbar {
           align-items: center;
 }
 
+section.navbar-fluid div.navbar nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  height: 6rem;
+  width: 52rem;
+}
+
+section.navbar-fluid div.navbar nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+section.navbar-fluid div.navbar nav ul li:first-child {
+  margin-left: 0;
+}
+
+section.navbar-fluid div.navbar nav ul li:last-child {
+  margin-right: 0;
+}
+
+section.navbar-fluid div.navbar nav ul li {
+  display: inline-block;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+}
+
+section.navbar-fluid div.navbar nav ul li > a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+section.navbar-fluid div.navbar nav ul li a.green {
+  color: #2ac3c0;
+}
+
 header.header-top-fluid {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -78,15 +131,51 @@ header.header-top-fluid .container div:nth-child(2) {
 }
 
 header.header-top-fluid .container div:nth-child(2) h2 {
-  margin: 0 0 2rem 0;
+  margin-bottom: 4rem;
   font-size: 6rem;
-  font-weight: 300;
+  font-weight: 100;
 }
 
 header.header-top-fluid .container div:nth-child(2) p {
-  margin: 0;
+  margin-bottom: 4rem;
   font-size: 2rem;
-  font-weight: 300;
+  font-weight: 200;
+}
+
+header.header-top-fluid .container div:nth-child(2) .header-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 5rem;
+  overflow: hidden;
+}
+
+header.header-top-fluid .container div:nth-child(2) .header-button > a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+header.header-top-fluid .container div:nth-child(2) .header-button > a .przycisk {
+  height: 5rem;
+  width: 20rem;
+  background-color: white;
+  text-align: center;
+  margin: 0;
+  padding: 2rem;
+  font-size: 1rem;
+  font-weight: 800;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+header.header-top-fluid .container div:nth-child(2) .header-button > a .przycisk > span {
+  color: #2ac3c0;
+  letter-spacing: 1px;
+}
+
+header.header-top-fluid .container div:nth-child(2) .header-button a:hover .przycisk {
+  -webkit-transform: translateY(-5rem);
+          transform: translateY(-5rem);
 }
 
 div.info {
@@ -136,33 +225,38 @@ section.napisy {
 }
 
 section.napisy div.quotes1 {
+  height: 30rem;
   width: 60rem;
-  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
 section.napisy div.quotes1 > h2 {
-  margin: 0;
-  position: absolute;
+  display: inline-block;
   font-family: 'Raleway', sans-serif;
   font-size: 3rem;
-  font-weight: 300;
+  font-weight: 400;
   color: #3f3f3f;
-  top: 11rem;
+  padding-bottom: 1rem;
 }
 
 section.napisy div.quotes1 > p {
-  margin: 0;
-  position: absolute;
+  display: inline-block;
   font-family: 'Raleway', sans-serif;
   color: gray;
   font-size: 1.6rem;
-  top: 16rem;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -233,12 +327,13 @@ section.quotes-fluid div.quotes > article {
   font-family: 'Raleway', sans-serif;
   color: gray;
   font-size: 1.6rem;
+  font-weight: 400;
 }
 
 section.quotes-fluid div.quotes > article > i.nazwiska {
   font-size: 1.2rem;
-  color: #4d4d4d;
-  font-weight: bold;
+  color: #666666;
+  font-weight: 800;
 }
 
 section.brand-panel-fluid {
@@ -258,5 +353,86 @@ section.brand-panel-fluid div.brand-panel {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+}
+
+section.video-container {
+  background-color: white;
+  height: 40rem;
+}
+
+section.video-container div.napisy-wideo {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 40rem;
+  width: 60rem;
+  background-color: white;
+  text-align: center;
+}
+
+section.video-container div.napisy-wideo > h2 {
+  margin: 1rem;
+  font-family: 'Raleway', sans-serif;
+  font-size: 3rem;
+  font-weight: 400;
+  color: #3f3f3f;
+}
+
+section.video-container div.napisy-wideo > p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: gray;
+}
+
+section.video-container div.napisy-wideo div.video-button {
+  position: absolute;
+  bottom: 9rem;
+}
+
+section.video-container div.napisy-wideo div.video-button > a {
+  display: inline-block;
+  height: 5rem;
+  width: 15rem;
+  background-color: #00FFA3;
+  text-decoration: none;
+  color: #11AF74;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+section.video-container div.napisy-wideo div.video-button > a > span {
+  display: inline-block;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  text-align: center;
+  margin-top: 2rem;
+  letter-spacing: 1px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+section.video-container div.napisy-wideo div.video-button a:hover {
+  background-color: #11AF74;
+  height: 5.25rem;
+  width: 15.5rem;
+}
+
+section.video-container div.napisy-wideo div.video-button a:hover span {
+  color: white;
+  font-size: 1.1rem;
+  margin-top: 2.075rem;
 }
 /*# sourceMappingURL=main.css.map */

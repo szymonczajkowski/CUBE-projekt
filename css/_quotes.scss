@@ -6,7 +6,6 @@ section.napisy {
     div.quotes1 {
 
         height: 30rem;
-        width: 60rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -21,8 +20,6 @@ section.napisy {
             color: rgb(63, 63, 63);
             padding-bottom: 1rem;
             
-            
-
         }
 
         >p {
@@ -33,7 +30,7 @@ section.napisy {
             font-size: 1.6rem;
             font-weight: 400;
             text-align: center;
-            
+            width: 60rem;
 
             
         }

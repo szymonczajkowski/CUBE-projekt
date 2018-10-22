@@ -1,18 +1,16 @@
 section.video-container{
 
-    background-color: white;
+    background-color: #fff;
     height: 40rem;
 
     div.napisy-wideo{
 
-        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
         height: 40rem;
-        width: 60rem;
-        background-color: white;
+        background-color: #fff;
         text-align: center;
 
         >h2 {
@@ -27,17 +25,19 @@ section.video-container{
 
         >p {
             
+            display: inline-block;
             font-family: 'Raleway', sans-serif;
             font-size: 1.6rem;
             font-weight: 400;
             color: gray;
+            width: 60rem;
+            margin-bottom: 1rem;
             
         }
     
         
         div.video-button{
 
-            position: absolute;
             bottom: 9rem;
 
             >a{
@@ -54,12 +54,13 @@ section.video-container{
 
                     display: inline-block;
                     font-family: 'Raleway', sans-serif;
-                    font-size: 1rem;
+                    font-size: 10px;
                     font-weight: 800;   
                     text-align: center;
-                    margin-top: 2rem;
+                    margin-top: 19.5px;
+                    margin-bottom:19.5px;
                     letter-spacing: 1px;
-                    transition: .5s;
+                    transition: .4s;
 
                 }
             
@@ -68,14 +69,11 @@ section.video-container{
             a:hover{
 
                 background-color: #11AF74;
-                height: 5.25rem;
-                width: 15.5rem;
-
+                
                 span{
 
                     color: white;
-                    font-size: 1.1rem;
-                    margin-top: 2.075rem;
+                    
 
                 }
 

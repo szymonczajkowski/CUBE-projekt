@@ -251,30 +251,6 @@ section.info-fluid div.info article:hover {
           transform: translateY(-2rem);
 }
 
-div.button > a {
-  display: inline-block;
-  width: 36rem;
-  height: 10rem;
-  background-color: orange;
-  text-decoration: none;
-  color: black;
-  overflow: hidden;
-}
-
-div.button > a > span {
-  line-height: 10rem;
-  text-align: center;
-  display: block;
-  font-size: 3rem;
-  -webkit-transition: .5s;
-  transition: .5s;
-}
-
-div.button > a:hover span {
-  -webkit-transform: translateY(-10rem);
-          transform: translateY(-10rem);
-}
-
 section.napisy {
   background-color: #F6F6F6;
   height: 30rem;
@@ -540,7 +516,7 @@ section.products-fluid {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 100rem;
+  height: 65rem;
   background-color: #fff;
 }
 
@@ -687,5 +663,174 @@ section.products-fluid .header-button > a .przycisk > span {
 section.products-fluid .header-button a:hover .przycisk {
   -webkit-transform: translateY(-5rem);
           transform: translateY(-5rem);
+}
+
+footer.footer-fluid {
+  background-color: #262626;
+  height: 45rem;
+}
+
+footer.footer-fluid div.footer-napis {
+  height: 25rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer.footer-fluid div.footer-napis > h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+footer.footer-fluid div.footer-napis .footer-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 5rem;
+}
+
+footer.footer-fluid div.footer-napis .footer-button > a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+footer.footer-fluid div.footer-napis .footer-button > a .przycisk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 5rem;
+  width: 15rem;
+  background-color: #262626;
+  text-align: center;
+  margin: 0;
+  padding: 2rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border: 2px solid;
+  border-color: #fff;
+}
+
+footer.footer-fluid div.footer-napis .footer-button > a .przycisk > span {
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+footer.footer-fluid div.footer-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #262626;
+  height: 15rem;
+}
+
+footer.footer-fluid div.footer-main div.footer-cube {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #262626;
+  height: 100%;
+  width: 33%;
+}
+
+footer.footer-fluid div.footer-main div.footer-cube > h2 {
+  font-family: 'Raleway', sans-serif;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+footer.footer-fluid div.footer-main div.footer-cube > p {
+  font-family: 'Raleway', sans-serif;
+  color: #555555;
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+
+footer.footer-fluid div.footer-main div.footer-list {
+  background-color: #262626;
+  width: 16.5%;
+}
+
+footer.footer-fluid div.footer-main div.footer-list > ul {
+  list-style: none;
+  line-height: 2.5rem;
+  margin-left: 5rem;
+}
+
+footer.footer-fluid div.footer-main div.footer-list > ul > li {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+footer.footer-fluid div.footer-main div.footer-list > ul > li > a {
+  text-decoration: none;
+  color: #00FFA3;
+}
+
+footer.footer-fluid div.footer-main div.footer-contact {
+  background-color: #262626;
+}
+
+footer.footer-fluid div.footer-main div.footer-contact > p {
+  font-family: 'Raleway', sans-serif;
+  color: #00FFA3;
+  font-size: 1.4rem;
+  font-weight: 200;
+  margin-left: 4rem;
+}
+
+div.footer-end {
+  width: 100%;
+  height: 6rem;
+  background-color: #1A1A1A;
+}
+
+div.footer-end div.footer-end-small {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+}
+
+div.footer-end div.footer-end-small > p {
+  font-family: 'Raleway', sans-serif;
+  color: #555555;
+  font-size: 1.4rem;
+  margin-top: 2.2rem;
+}
+
+div.footer-end div.footer-end-small > p > a {
+  text-decoration: none;
+  color: #00FFA3;
+  font-size: 1.4rem;
 }
 /*# sourceMappingURL=main.css.map */
